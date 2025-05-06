@@ -39,7 +39,7 @@ def translate_if_needed(text, lang):
     return text
 
 def call_model(prompt_blocks):
-    api_key = os.getenv("GROQ_API_KEY", "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")
+    api_key = os.getenv("GROQ_API_KEY", "API_KEY")
     messages = [
         {"role": "system", "content": "You are a senior Indian criminal lawyer. Reply clearly and concisely with applicable sections from IPC, CrPC, and Evidence Act. Structure your answer using bullet points or short paragraphs for clarity."},
         {"role": "user", "content": "\n\n".join([f"[{blk['type'].upper()}]\n{blk['content']}" for blk in prompt_blocks if blk['content']])}
