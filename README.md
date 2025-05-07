@@ -81,7 +81,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-App runs at `https://a21526c3df38b299f3.gradio.live` or gives you a public Gradio share link.
+App runs at `https://a21526c3df38b299f3.gradio.live` check it out
 
 ---
 
